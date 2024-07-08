@@ -33,7 +33,7 @@
     <!---Top Header Section End--->
 
 
-    
+
 
     <!---Navbar Section Start--->
 
@@ -89,7 +89,7 @@
             <div class="content">
                 <i class="fa-sharp fa-solid fa-computer"></i>
                 <h2>Welcome to</h2>
-                <h3>Business Autumation Ltd.</h3>
+                <h3>Business Automation Ltd.</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi quia magni repellendus quam illum eum fugiat officiis, nulla eius?</p>
                 <a href="#" class="btn">About Us</a>
             </div>
@@ -122,8 +122,60 @@
 
 
 
+    <!---Form Section Start--->
 
+    <div class="form-part">
+        <h1>BOOK</h1><h2>APPOINTMENT</h2>
 
+        <form class="formy">
+            <div class="fom">
+                <label>Patient Name</label>
+                <input type="text">
+            </div>
+
+            <div class="fom">
+                <label>Doctor's Name</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Normal Distribution</option>
+                    <option value="saab">Tanvir</option>
+                    <option value="fiat">Ahmed</option>
+                    <option value="audi">Khan</option>
+                </select>
+            </div>
+
+            <div class="fom">
+                <label>Department's Name</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Normal Distribution</option>
+                    <option value="saab">Tanvir</option>
+                    <option value="fiat">Ahmed</option>
+                    <option value="audi">Khan</option>
+                </select>
+            </div>
+
+            <div class="fom">
+                <label>Phone Number</label>
+                <input type="text" placeholder="XXXXXXXXXXX">
+            </div>
+
+            <div class="fom">
+                <label>Symptoms</label>
+                <input type="text">
+            </div>
+
+            <div class="fom">
+                <label>Choose Date</label>
+                <input type="date" value="2024-08-07">
+            </div>
+
+            <div class="fom">
+                <input id="sub" type="submit" value="SUBMIT NOW">
+            </div>
+        
+        </form>  
+    </div>
+
+    <!---Form Section End--->
 
 
     <!---Javascript Start--->
@@ -148,6 +200,8 @@
             index = (index - 1 + slides.length) % slides.length;
             slides[index].classList.add('active');
         }
+
+        setInterval(next, 5000);
     </script>
 
     <!---Javascript End--->
