@@ -86,3 +86,134 @@
     text-decoration: none;
     color: #f2f2f2;
 }
+
+
+
+
+
+.cont{
+    width:100%;
+    height:450px;
+    position: relative;
+    box-shadow: 2px 2px 15px #dedbdb;
+    
+}
+
+.cont img{
+    position: absolute;
+    width:300px;
+    height: 400px;
+    top:270px;
+    left: 80%;
+    z-index: 2;
+}
+
+.cont .cont-rapper{
+    position: relative;
+    /* background-color: orange; */
+    height: 350px;
+    width:1300px;
+    top: 40px;
+    left: 170px;
+}
+
+.cont .cont-rapper .content{
+    /* background-color: blue; */
+    height: 100%;
+    display: inline-block;
+    margin-right: 100px;
+    padding: 20px;
+    width:600px;
+}
+
+.cont .cont-rapper .content i{
+    font-size: 32px;
+    color:#00C6A9;
+    padding-bottom: 20px;
+}
+
+.cont .cont-rapper .content h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cont .cont-rapper .content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color:#00C6A9 !important;
+}
+
+.cont .cont-rapper .content p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cont .cont-rapper .content .btn{
+    width:150px;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    background-color: black; 
+    color:white;
+    position: absolute;
+}
+
+.cont .cont-rapper .imgview{
+    display: inline-block;
+    /* background-color: green;  */
+    height: 100%;
+    width: 580px;
+    position: absolute;
+}
+
+.cont .cont-rapper .imgview img{
+    position:static;
+    height:350px;
+    width: 520px;
+    z-index: 1;
+}
+
+.cont .cont-rapper{
+    display: none;
+}
+
+.cont .cont-rapper.active{
+    display: block;
+}
+
+
+.cont #previous{
+    position: absolute;
+    top:94%;
+    left:72%;
+    transform: translateY(-94%);
+    transform: translateX(-72%);
+    height: 60px;
+    width: 50px;
+    cursor:pointer;
+    color:#00C6A9;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.cont #next{
+    position: absolute;
+    top:94%;
+    left:75%;
+    transform: translateY(-94%);
+    transform: translateX(-75%);
+    line-height: 50px;
+    height: 60px;
+    width: 50px;
+    color:#00C6A9;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+
+
+

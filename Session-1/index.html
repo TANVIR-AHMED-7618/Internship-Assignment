@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session-1 Assignment</title>
+    <title>Assignment - 1</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/fontawesome.min.css">
+
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
 </head>
+
+
 <body>
+
+    <!---Top Header Section Start--->
     <div class="pre_head">
         <ul>
             <li><i class="fa-solid fa-phone"></i>Call: +01 123455678990</li>
@@ -17,6 +29,13 @@
             <li><i class="fa-solid fa-location-dot"></i>Location </li>
         </ul>
     </div>
+
+    <!---Top Header Section End--->
+
+
+    
+
+    <!---Navbar Section Start--->
 
     <div class="navbar">
         <div class="image">
@@ -42,7 +61,95 @@
             </ul>
         </div>
     </div>
-    
+
+    <!---Navbar Section End--->
+
+
+
+    <!---Slider Section Start--->
+    <div class="cont">
+        <img src="Image/dots.png">
+
+
+        <div class="cont-rapper active" >
+            <div class="content">
+                <i class="fa-sharp fa-solid fa-circle-play"></i>
+                <h2>MICO</h2>
+                <h3>HOSPITAL</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi quia magni repellendus quam illum eum fugiat officiis, nulla eius?</p>
+                <a href="#" class="btn">Contact Us</a>
+            </div>
+
+            <div class="imgview">
+                <img src="Image/slider-img.jpg">
+            </div>
+        </div>
+
+        <div class="cont-rapper" >
+            <div class="content">
+                <i class="fa-sharp fa-solid fa-computer"></i>
+                <h2>Welcome to</h2>
+                <h3>Business Autumation Ltd.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi quia magni repellendus quam illum eum fugiat officiis, nulla eius?</p>
+                <a href="#" class="btn">About Us</a>
+            </div>
+
+            <div class="imgview">
+                <img src="Image/slide-img2.jpg">
+            </div>
+        </div>
+
+        <div class="cont-rapper" >
+            <div class="content">
+                <i class="fa-sharp fa-solid fa-stethoscope"></i>
+                <h2>Hello</h2>
+                <h3>I am Tanvir Ahmed Khan</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi quia magni repellendus quam illum eum fugiat officiis, nulla eius?</p>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+
+            <div class="imgview">
+                <img src="Image/slider-img3.jpg">
+            </div>
+        </div>
+
+        <div id="previous" onclick="prev()"><i class="fa-sharp fa-solid fa-square-chevron-left"></i></div>
+        <div id="next" onclick="next()"><i class="fa-sharp fa-solid fa-square-chevron-right"></i></div>
+
+    </div>
+
+    <!---Slider Section End--->
+
+
+
+
+
+
+
+    <!---Javascript Start--->
+
     <script src="JS/bootstrap.min.js"></script>
+    <script>
+        let slides = document.querySelectorAll('.cont-rapper');
+        let index = 0;
+
+        //next function
+
+        function next(){
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+        //previous function
+
+        function prev(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+    </script>
+
+    <!---Javascript End--->
 </body>
 </html>
