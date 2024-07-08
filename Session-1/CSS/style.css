@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+.pre_head{
+    height:35px;
+    width:100%;
+    padding: 5px;
+}
+
+.pre_head ul{
+    list-style: none;
+    margin-left: 150px;
+}
+
+.pre_head ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.pre_head ul li i{
+    padding-right: 10px;
+    color: #00C6A9;
+}
+
+
+/* ----Navbar CSS----*/
+
+.navbar{
+    height:80px;
+    width:100%;
+    padding: 0px 0px 0px 50px !important;
+    background-color: #00C6A9;
+}
+.navbar .image{
+    width:5%;
+    display:inline-block;
+}
+
+.image img{
+    height: 80px;
+    width : 70px;
+    padding: 10px;
+    background-color: white;
+}
+
+.navbar .menu{
+    width:74%;
+    padding-top: 15px;
+    display:inline-block;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    padding-left: 25px;
+    display:inline;
+    color: #f2f2f2;
+}
+
+.navbar .other{
+    width:21%;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.other ul{
+    list-style: none;
+}
+
+.other ul li{
+    padding-left: 20px;
+    display: inline;
+}
+
+.other ul li i{
+    color:#f2f2f2;
+    padding-right: 10px;
+}
+
+.other ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
